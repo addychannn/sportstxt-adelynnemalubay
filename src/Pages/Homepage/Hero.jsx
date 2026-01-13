@@ -3,7 +3,7 @@ import SportsGrid from "../../components/SportsGrid";
 
 function Hero() {
   return (
-    <div className="container-fluid vh-100 overflow-hidden px-0">
+    <div className=" vh-100 overflow-hidden mx-10">
       <div className="row g-0 h-100 align-items-center">
         <div className="col-lg-6 px-5">
           <h1 className="display-4 fw-bold mb-4" style={{ color: "#001d3d" }}>
