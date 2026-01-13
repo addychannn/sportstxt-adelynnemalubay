@@ -3,7 +3,7 @@ import '../SportsGrid.css';
 
 const SportsGrid = ({ items }) => {
   // Use your basketball asset
-  const images = items || Array(6).fill({ src: '/public/images/about_us_bg.webp' });
+  const images = items || Array(6).fill({ src: '/images/about_us_bg.webp' });
 
   // Create the infinite list (duplicated)
   const infiniteList = [...images, ...images, ...images];
