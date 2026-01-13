@@ -1,0 +1,50 @@
+/* The frame that clips the images at the screen edges */
+.sports-grid-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Optional: Fades the images out at the top/bottom like a professional UI */
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+/* 3-column container */
+.sports-masonry {
+  display: flex;
+  gap: 15px; /* Reduced gap to match your reference */
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Columns */
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Vertical gap between images */
+}
+
+/* The Animation */
+@keyframes scrollVertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); } /* Halfway because we duplicate the list */
+}
+
+.column-move {
+  animation: scrollVertical 30s linear infinite;
+}
+
+/* Offset the middle column to achieve the look in Frame 1.jpg */
+.col-middle {
+  margin-top: 50px;
+  animation-duration: 35s; /* Different speed for a more dynamic feel */
+}
+
+.sports-img {
+  width: 100%;
+  height: 350px; /* Fixed height for consistent capsules */
+  object-fit: cover;
+  border-radius: 80px; /* Capsule shape from your image */
+  display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
