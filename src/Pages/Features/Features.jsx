@@ -97,7 +97,7 @@ const VideoCard = () => {
       <div style={{ flex: 1 }}>
         <div className="position-relative h-100">
           <img 
-            src="/public/images/basketball.png" 
+            src="/images/basketball.png" 
             className="rounded-3 w-100" 
             alt="Video preview" 
             style={{ height: "180px", objectFit: "cover" }} 
@@ -151,7 +151,7 @@ export function Features() {
               title="Fanzone"
               text="Empower your supporters in the Fanzone, a moderated platform for interaction and involvement. Fans can create public and private subgroups for sharing content and building a supportive community."
               icon={<i className="bi bi-people-fill"></i>}
-              image="/public/images/fans.jpg"
+              image="/images/fans.jpg"
             />
           </div>
 

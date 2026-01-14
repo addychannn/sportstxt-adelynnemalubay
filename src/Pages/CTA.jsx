@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 function CTA() {
   const sectionStyle = {
-    backgroundImage: "url('/public/images/CTA_BG.png')",
+    backgroundImage: "url('/images/CTA_BG.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
