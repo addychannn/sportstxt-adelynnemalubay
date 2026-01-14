@@ -10,40 +10,40 @@ function IconCard({ cardName, text, icon, onClick, className }) {
 
   return (
     <div
-      className={`h-100 border ${className}`}
+      className={`h-100 border w-100 ${className}`} // Added w-100 to fill the parent column
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
         cursor: onClick ? "pointer" : "default",
-        width: "40rem",
+        // REMOVED fixed 40rem width. Added maxWidth for large screens if needed.
+        maxWidth: "100%", 
         borderRadius: "20px",
         backgroundColor: "#ffffff",
-        // Hover Effects
-        borderColor: isHovered ? BRAND_RED : "#dee2e6", // Bootstrap default border color
-        transform: isHovered ? "translateY(-10px)" : "translateY(0)",
+        borderColor: isHovered ? BRAND_RED : "#dee2e6",
+        // Disable hover transform on mobile to prevent weird jumping on touch
+        transform: isHovered && window.innerWidth > 768 ? "translateY(-10px)" : "translateY(0)",
         boxShadow: isHovered 
           ? "0 15px 30px rgba(230, 57, 70, 0.15)" 
           : "none",
         transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
       }}
     >
-      {/* 30px Padding Container */}
-      <div style={{ padding: "30px" }}>
+      {/* Responsive Padding: 20px on mobile, 30px on desktop */}
+      <div style={{ padding: window.innerWidth < 768 ? "20px" : "30px" }}>
+        
         {/* Icon Container */}
         <div
           className="d-flex align-items-center justify-content-center mb-4"
           style={{
             width: "60px",
             height: "60px",
-            // Icon box turns Red with White icon on hover
             backgroundColor: isHovered ? BRAND_RED : ICON_BG_DEFAULT,
             borderRadius: "12px",
             color: isHovered ? "#ffffff" : PRIMARY_BLUE,
             transition: "all 0.3s ease",
           }}
         >
-          {/* Ensure the icon renders at the correct size */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             {icon}
           </div>
@@ -61,7 +61,8 @@ function IconCard({ cardName, text, icon, onClick, className }) {
             className="fw-semibold mb-0"
             style={{
               color: "#728496",
-              fontSize: "0.95rem",
+              // Slightly smaller font for mobile readability
+              fontSize: window.innerWidth < 768 ? "0.9rem" : "0.95rem",
               lineHeight: "1.6",
             }}
           >

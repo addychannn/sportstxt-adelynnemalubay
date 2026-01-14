@@ -16,6 +16,17 @@ function HowItWorks() {
     <div className="container-fluid py-5" style={{ backgroundColor: "#F6F7F8" }}>
       <div className="text-center mb-5">
         <h1 className="display-4 fw-bold" style={{ color: "#001d3d" }}>How It Works</h1>
+        <div className="mx-2 mx-md-10 d-flex flex-column align-items-center">
+            <p 
+              className="fw-bold text-center" 
+              style={{ 
+                color: "#728496", 
+                maxWidth: "700px", 
+                lineHeight: "1.6" 
+              }}
+            >
+              SportsTXT is a fully customizable community platform that connects directly with members and fans in real-time giving them a true sense of belonging.            </p>
+          </div>
       </div>
 
       <div className="container position-relative mt-5">
