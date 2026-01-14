@@ -36,17 +36,17 @@ function Introduction() {
           <Card 
             cardName="The Fan Experience"
             text="A dedicated space for exclusive content and meaningful fan-to-fan interactions with real-time engagement."
-            image="/images/archer.png"
+            image="/images/fans.avif"
           />
           <Card 
             cardName="Club Insights"
             text="Powerful analytics that help clubs understand their community’s pulse and drive better decisions."
-            image="/images/archer.png"
+            image="/images/group.avif"
           />
           <Card 
             cardName="Connected Community"
             text="Breaking down the barriers between professional organizations and their global supporter base."
-            image="/images/archer.png"
+            image="/images/community.avif"
           />
         </div>
 

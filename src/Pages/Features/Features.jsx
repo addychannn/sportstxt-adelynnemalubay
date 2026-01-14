@@ -140,7 +140,7 @@ export function Features() {
       <div className="container position-relative my-10" style={{ zIndex: 1 }}>
         <div className="text-center mb-3">
           <span className="fw-bold" style={{ color: BRAND_RED, fontSize: "0.85rem", letterSpacing: "1.5px" }}>FEATURES</span>
-          <h2 className="fw-semibold mt-2 mx-auto" style={{ color: "#0A1D37", fontSize: "2rem" }}>
+          <h2 className="fw-semibold mt-2 mx-auto fs-4 px-5" style={{ color: "#0A1D37" }}>
             On SportsTXT, you’ll find a great mix of features enabling sports clubs and athletes to connect directly with their fans.
           </h2>
         </div>
