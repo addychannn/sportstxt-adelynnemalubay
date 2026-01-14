@@ -1,45 +1,66 @@
-import Button from "./Button"
+import { NavLink } from 'react-router-dom';
+import Button from "./Button";
 
 function Navbar() {
+  // Logic for the active style (the "line" under the link)
+  const activeStyle = {
+    color: '#015CA8',
+    borderBottom: 'solid #015CA8', // Adjust color/thickness of your line here
+  };
+
+  const normalStyle = {
+    color: 'inherit'
+  };
+
   return (
     <nav className="navbar border fixed-top bg-white">
-      {/* Change mx-10 to mx-auto to center the container itself */}
       <div className="d-flex mx-10 flex-grow-1 justify-content-between">
         
-        {/* Logo Section */}
-        <span className="navbar-brand">
-          <img 
-            src="../src/assets/logo.png" 
-            alt="MyApp Logo" 
-            height="40"
-            className="d-inline-block align-top"
-          />
-        </span>
+        <NavLink to="/" className="navbar-brand">
+          <img src="/images/logo.png" alt="Logo" height="40" />
+        </NavLink>
 
-        {/* Links and Buttons Section - Centered using d-flex and gap */}
         <div className="d-flex align-items-center gap-4">
-          <span className="navbar-brand mb-0 fw-semibold nav-link-custom">
+          <NavLink 
+            to="/" 
+            className="text-decoration-none fw-semibold nav-link-custom"
+            style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
+          >
             Home
-          </span>
-          <span className="navbar-brand mb-0 fw-semibold nav-link-custom">
+          </NavLink>
+
+          <NavLink 
+            to="/features" 
+            className="text-decoration-none fw-semibold nav-link-custom"
+            style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
+          >
             Features
-          </span>
-          <span className="navbar-brand mb-0 fw-semibold nav-link-custom">
+          </NavLink>
+
+          <NavLink 
+            to="/about" 
+            className="text-decoration-none fw-semibold nav-link-custom"
+            style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
+          >
             About Us
-          </span>
-          <span className="navbar-brand mb-0 fw-semibold nav-link-custom">
+          </NavLink>
+
+          <NavLink 
+            to="/contact" 
+            className="text-decoration-none fw-semibold nav-link-custom"
+            style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
+          >
             Contact Us
-          </span>
+          </NavLink>
           
           <div className="d-flex gap-2 ms-2">
             <Button text="Join" className="btn-primary" />
             <Button text="Login" className="btn-border" />
           </div>
         </div>
-        
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
