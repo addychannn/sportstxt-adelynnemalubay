@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import ScrollToTop from './ScrollToTop';
 import Navbar from './components/Main_Navbar';
@@ -10,9 +10,13 @@ import ContactUs from './Pages/ContactUs/ContactUs';
 import AboutUs from './Pages/About/index';
 import NotFound from './Pages/NotFound';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  
+  const showExtraContent = ['/', '/features', '/about', '/contact'].includes(location.pathname);
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -22,8 +26,21 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <CTA />
-      <Footer />
+      
+      {showExtraContent && (
+        <>
+          <CTA />
+          <Footer />
+        </>
+      )}
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
