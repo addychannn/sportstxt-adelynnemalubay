@@ -11,8 +11,8 @@ function CTA() {
 
   return (
     <div className="container-fluid py-5" style={sectionStyle}>
-      <div className="d-flex flex-column justify-content-center align-items-center text-center my-10 gap-4">
-        <h1 className="display-4 fw-bold" style={{ color: "#ffffff" }}>
+      <div className="d-flex flex-column justify-content-center align-items-center text-center my-10 mx-4 mx-md-10 gap-4">
+        <h1 className=" fw-bold" style={{ color: "#ffffff" }}>
           Build A Unified Community with SportsTXT
         </h1>
         <span className="fw-bold" style={{ color: "#ffffff" }}>
