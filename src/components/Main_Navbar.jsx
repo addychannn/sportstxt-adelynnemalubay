@@ -25,8 +25,8 @@ function Navbar() {
         <div className="d-none d-lg-flex align-items-center gap-4">
           <NavLinks activeStyle={activeStyle} normalStyle={normalStyle} />
           <div className="d-flex gap-2 ms-2">
-            <Button text="Join" className="btn-primary" />
-            <Button text="Login" className="btn-border" />
+            <Button text="Join" className="btn-primary" to="/join" />
+            <Button text="Login" className="btn-border" to="/login" />
           </div>
         </div>
 
@@ -47,8 +47,8 @@ function Navbar() {
               />
               <hr />
               <div className="d-grid gap-2">
-                <Button text="Join" className="btn-primary w-100" />
-                <Button text="Login" className="btn-border w-100" />
+                <Button text="Join" className="btn-primary" to="/join" />
+                <Button text="Login" className="btn-border" to="/login" />
               </div>
             </div>
           </div>

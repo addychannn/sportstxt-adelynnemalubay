@@ -22,6 +22,7 @@ function CTA() {
         <Button
           text="Get in Touch"
           className="btn-primary px-4 py-2"
+          to="/join"
         />
       </div>
     </div>

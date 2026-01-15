@@ -83,6 +83,7 @@ function ContactUs() {
                   <Button
                     text="Submit Message"
                     className="btn-primary w-md-auto px-5 py-2"
+                    to="/submit"
                   />
                 </div>
               </form>

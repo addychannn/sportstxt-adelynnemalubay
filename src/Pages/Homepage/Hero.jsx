@@ -40,6 +40,7 @@ function Hero() {
               <Button
                 text="Become a member"
                 className="btn-primary w-md-auto px-5 py-2"
+                to="/join"
               />
             </div>
           </div>

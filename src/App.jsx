@@ -8,6 +8,7 @@ import Footer from './Pages/Footer';
 import Homepage from './Pages/Homepage/Homepage';
 import ContactUs from './Pages/ContactUs/ContactUs';
 import AboutUs from './Pages/About/index';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <CTA />
       <Footer />
