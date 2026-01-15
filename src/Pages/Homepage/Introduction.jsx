@@ -3,10 +3,8 @@ import Card from "../../components/Card";
 function Introduction() {
   return (
     <div className="container-fluid overflow-hidden py-5" style={{ backgroundColor: "#F6F7F8" }}>
-      {/* Use a container to center the content block and handle horizontal padding */}
       <div className="container">
         
-        {/* Header Section */}
         <div className="row justify-content-center text-center mb-5">
           <div className="col-12 d-flex flex-column align-items-center">
             <span className="fw-bold mb-2" style={{ color: "#E63946", letterSpacing: "1px" }}>
@@ -37,7 +35,6 @@ function Introduction() {
           </div>
         </div>
 
-        {/* Cards Section: Using Grid for better centering and wrapping */}
         <div className="row g-4 justify-content-center">
           <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
             <Card 

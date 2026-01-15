@@ -30,13 +30,12 @@ function HowItWorks() {
       </div>
 
       <div className="container position-relative mt-5">
-        {/* Progress Line: Adjusted left/right to 12.5% to hit the center of 4 columns exactly */}
         <div 
           className="position-absolute d-none d-md-block" 
           style={{ 
             height: "2px", 
             backgroundColor: "#D1D5DB", 
-            top: "30px", // Exact center of the 60px box
+            top: "30px",
             left: "12.5%", 
             right: "12.5%", 
             zIndex: 0 
@@ -46,7 +45,6 @@ function HowItWorks() {
         <div className="row justify-content-center g-0 position-relative" style={{ zIndex: 1 }}>
           {steps.map((step) => {
             const isHovered = hoveredId === step.id;
-            // Highlighted if hovered OR if it's the 3rd step (per your reference image)
             const isRed = isHovered;
             const currentColor = isRed ? activeRed : step.defaultColor;
 
@@ -60,7 +58,6 @@ function HowItWorks() {
               >
                 <div className="d-flex flex-column align-items-center">
                   
-                  {/* Number Box */}
                   <div 
                     className="d-flex align-items-center justify-content-center mb-3 fw-bold text-white shadow-sm"
                     style={{ 
@@ -76,7 +73,6 @@ function HowItWorks() {
                     {step.id}
                   </div>
 
-                  {/* Title */}
                   <h5 
                     className="fw-bold mb-2" 
                     style={{ 
@@ -87,7 +83,6 @@ function HowItWorks() {
                     {step.title}
                   </h5>
 
-                  {/* Description */}
                   <p 
                     className="small fw-semibold px-3" 
                     style={{ 

@@ -1,6 +1,5 @@
 function AboutUsBanner() {
   const bannerStyle = {
-    // Adding a linear gradient overlay makes the image look premium and improves contrast
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('/images/player.avif')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -13,13 +12,12 @@ function AboutUsBanner() {
   };
 
   const textStyle = {
-    // Clamp makes the font scale: Min 80px, Preferred 18vw, Max 250px
     fontSize: "clamp(80px, 18vw, 250px)",
     lineHeight: "0.8", 
     letterSpacing: "-0.05em", 
-    opacity: "0.3", // Low opacity for that "watermark" background look
+    opacity: "0.3",
     whiteSpace: "nowrap",
-    userSelect: "none", // Prevents users from accidentally highlighting the giant text
+    userSelect: "none",
   };
 
   return (

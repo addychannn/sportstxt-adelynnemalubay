@@ -4,12 +4,10 @@ import SportsGrid from "../../components/SportsGrid";
 function Hero() {
   return (
     <div 
-      /* Added 'pt-5 pt-lg-0': Extra padding top on mobile, removed on large screens */
       className="container-fluid vh-lg-100 w-full overflow-hidden position-relative d-flex align-items-center pt-5" 
       style={{ backgroundColor: "#f9fafb" }}
     >
       
-      {/* Enhanced Faded Grid Layer */}
       <div
         className="position-absolute top-0 start-0 w-100 h-100"
         style={{
@@ -25,7 +23,6 @@ function Hero() {
         }}
       />
 
-      {/* Content Layer */}
       <div className="container position-relative py-5 pt-md-0 pt-lg-0" style={{ zIndex: 1 }}>
         <div className="row g-4 align-items-center">
           
@@ -42,15 +39,11 @@ function Hero() {
             <div className="d-flex justify-content-center justify-content-lg-start">
               <Button
                 text="Become a member"
-                className="btn-primary px-4 py-3"
+                className="btn-primary w-md-auto px-5 py-2"
               />
             </div>
           </div>
 
-          {/* Responsive Visibility: 
-              'd-none' hides it by default (mobile).
-              'd-lg-block' shows it only on Large screens and up.
-          */}
           <div className="col-lg-6 mt-5 mt-lg-0 d-none d-lg-block">
             <div className="px-2">
                <SportsGrid />

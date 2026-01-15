@@ -4,7 +4,6 @@ function Platform() {
   return (
     <div className="container-fluid w-full overflow-hidden position-relative py-5" style={{ backgroundColor: "#f9fafb" }}>
       
-      {/* Enhanced Faded Grid Layer */}
       <div
         className="position-absolute inset-0 w-100 h-100"
         style={{
@@ -22,13 +21,10 @@ function Platform() {
         }}
       />
 
-      {/* Content Layer */}
       <div className="container position-relative" style={{ zIndex: 1 }}>
         
-        {/* Header Section */}
         <div className="row justify-content-center mb-5">
           <div className="col-12 col-lg-8 d-flex flex-column align-items-center text-center">
-            {/* Responsive font size for the header */}
             <h1 className="display-5 display-md-4 fw-bold mb-3" style={{ color: "#001d3d" }}>
               The Platform of Firsts
             </h1>
@@ -45,8 +41,6 @@ function Platform() {
           </div>
         </div>
 
-        {/* Responsive Grid for IconCards */}
-        {/* g-4 provides consistent spacing between cards */}
         <div className="row g-4 justify-content-center">
           
           <div className="col-12 col-md-6 d-flex">

@@ -1,8 +1,6 @@
 function AboutUs() {
   return (
     <div className="container-fluid overflow-hidden position-relative py-5" style={{ backgroundColor: "#f9fafb" }}>
-      
-      {/* Enhanced Faded Grid Layer */}
       <div
         className="position-absolute w-100 h-100"
         style={{
@@ -20,13 +18,9 @@ function AboutUs() {
         }}
       />
 
-      {/* Content Layer */}
-      {/* Replaced mx-10 with a standard Bootstrap container for automatic responsive margins */}
       <div className="container position-relative" style={{ zIndex: 1 }}>
         <div className="row align-items-center g-4">
           
-          {/* Text Column */}
-          {/* Removed px-5 to prevent content squishing on mobile */}
           <div className="col-lg-6 text-center text-lg-start">
             <span className="fw-bold" style={{ color: "#E63946", letterSpacing: "1px" }}>
               ABOUT US
@@ -48,7 +42,6 @@ function AboutUs() {
             </p>
           </div>
 
-          {/* Image Column */}
           <div className="col-lg-6">
             <div 
               style={{
@@ -57,7 +50,6 @@ function AboutUs() {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
                 width: "100%",
-                // Responsive height: 300px on mobile, 500px on desktop
                 height: "clamp(300px, 50vh, 500px)" 
               }}
               role="img"

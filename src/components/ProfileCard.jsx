@@ -1,8 +1,3 @@
-import React from 'react';
-
-// Note: Ensure <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800&display=swap" rel="stylesheet"> 
-// is in your index.html or import it in your CSS file.
-
 function ProfileCard({ name, role, description, imageUrl }) {
   const cardStyle = {
     height: '600px',
@@ -13,7 +8,7 @@ function ProfileCard({ name, role, description, imageUrl }) {
     overflow: 'hidden',
     backgroundColor: '#fff',
     boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
-    fontFamily: "'Lexend', sans-serif", // Applied Lexend here
+    fontFamily: "'Lexend', sans-serif", 
   };
 
   const imageContainerStyle = {
@@ -45,7 +40,7 @@ function ProfileCard({ name, role, description, imageUrl }) {
         <h2 style={{ 
           margin: 0, 
           fontSize: '22px', 
-          fontWeight: '800', // Extra bold for Lexend
+          fontWeight: '800',
           color: '#0D1B2A',
           letterSpacing: '-0.5px'
         }}>
@@ -66,7 +61,7 @@ function ProfileCard({ name, role, description, imageUrl }) {
           margin: '4px 0 0 0',
           fontSize: '15px', 
           color: '#7B8D9E', 
-          fontWeight: '500', // Medium weight for Lexend readability
+          fontWeight: '500', 
           lineHeight: '1.4'
         }}>
           {description}

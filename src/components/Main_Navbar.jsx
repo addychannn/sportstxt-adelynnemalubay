@@ -12,19 +12,16 @@ function Navbar() {
 
   const normalStyle = { color: 'inherit' };
 
-  // Helper to close menu when a link is clicked
   const closeMenu = () => setIsOpen(false);
 
   return (
     <nav className="navbar border fixed-top bg-white px-3 px-lg-5">
       <div className="container-fluid d-flex justify-content-between align-items-center">
         
-        {/* Logo */}
         <NavLink to="/" className="navbar-brand" onClick={closeMenu}>
           <img src="/images/logo.png" alt="Logo" height="40" />
         </NavLink>
 
-        {/* Desktop Links (Hidden on mobile) */}
         <div className="d-none d-lg-flex align-items-center gap-4">
           <NavLinks activeStyle={activeStyle} normalStyle={normalStyle} />
           <div className="d-flex gap-2 ms-2">
@@ -33,16 +30,13 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Toggle Button (Visible only on mobile) */}
         <button 
           className="btn d-lg-none border-0" 
           onClick={() => setIsOpen(!isOpen)}
         >
-          {/* Leave the span empty; the icon is added via the CSS class */}
           <span className={`fs-1 ${isOpen ? 'bi bi-x' : 'bi bi-list'}`}></span>
         </button>
 
-        {/* Mobile Dropdown Menu */}
         {isOpen && (
           <div className="d-lg-none position-absolute top-100 start-0 w-100 bg-white border-bottom p-4 shadow-sm">
             <div className="d-flex flex-column gap-3">
@@ -64,7 +58,6 @@ function Navbar() {
   );
 }
 
-// Sub-component to avoid repeating links
 function NavLinks({ activeStyle, normalStyle, onClick }) {
   const links = [
     { path: "/", label: "Home" },

@@ -26,7 +26,6 @@ function Card({ cardName, text, image, onClick, className }) {
         />
       )}
 
-      {/* Content Section with Figma 30px padding */}
       <div>
         {cardName && (
           <h5 className="fw-bold fs-5">

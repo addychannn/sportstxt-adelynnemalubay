@@ -7,7 +7,6 @@ function ContactUs() {
       style={{ backgroundColor: "#F6F7F8", minHeight: "100vh" }}
     >
       <div className="container">
-        {/* Header Section */}
         <div className="row justify-content-center mb-5 mt-md-5 mt-5">
           <div className="col-12 d-flex flex-column align-items-center text-center">
             <span className="fw-bold mb-2" style={{ color: "#E63946", letterSpacing: "1px" }}>
@@ -30,12 +29,9 @@ function ContactUs() {
           </div>
         </div>
 
-        {/* Changed align-items-stretch to align-items-start so cards don't force equal height */}
         <div className="row justify-content-center align-items-start g-4">
           
-          {/* Office Card - Appear FIRST on mobile */}
           <div className="col-12 col-lg-4 order-1 order-lg-2">
-            {/* Removed h-100 so the card "hugs" its content */}
             <div className="bg-white p-4 shadow-sm rounded-4 border">
               <h5 className="fw-bold mb-4" style={{ color: "#001d3d" }}>Our Office</h5>
               <div className="d-flex align-items-start gap-3">
@@ -58,7 +54,6 @@ function ContactUs() {
             </div>
           </div>
 
-          {/* Form Card - Appear SECOND on mobile */}
           <div className="col-12 col-lg-7 col-xl-6 order-2 order-lg-1">
             <div className="bg-white p-4 p-md-5 shadow-sm rounded-4 border">
               <h5 className="fw-bold mb-4" style={{ color: "#001d3d" }}>Send us a Message</h5>
@@ -84,10 +79,10 @@ function ContactUs() {
                   <label className="form-label small fw-bold text-secondary">Message</label>
                   <textarea className="form-control bg-light border-0 py-2" rows="5" placeholder="Message"></textarea>
                 </div>
-                <div className="col-12 text-center text-md-start mt-4">
+                <div className="col-12 text-center text-md-start mt-4 d-flex justify-content-center">
                   <Button
                     text="Submit Message"
-                    className="btn-primary w-100 w-md-auto px-5 py-2"
+                    className="btn-primary w-md-auto px-5 py-2"
                   />
                 </div>
               </form>

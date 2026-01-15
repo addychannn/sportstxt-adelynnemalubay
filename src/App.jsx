@@ -15,7 +15,6 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        {/* The "index" route is your default homepage */}
         <Route path="/" element={<Homepage />} />
         <Route path="/features" element={<Features />} />
         <Route path="/about" element={<AboutUs />} />

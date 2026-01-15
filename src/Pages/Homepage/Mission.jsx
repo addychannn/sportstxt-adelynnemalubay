@@ -18,7 +18,6 @@ function Mission() {
         }}
       />
 
-      {/* Content Layer */}
       <div className="column row-md g-0 h-100 align-items-center mx-4 mx-md-10 position-relative" style={{ zIndex: 1 }}>
        <div className="row w-100 h-100 py-5 my-md-10">
         <div className="d-flex flex-column align-items-center">

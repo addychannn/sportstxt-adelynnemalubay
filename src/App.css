@@ -43,7 +43,7 @@
 /* navbar */
 .nav-link-custom {
   position: relative;
-  color: inherit; /* default text color */
+  color: inherit; 
   cursor: pointer;
   transition: color 0.3s;
 }

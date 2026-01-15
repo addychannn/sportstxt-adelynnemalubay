@@ -3,7 +3,6 @@ function Footer() {
     <footer className="container-fluid py-5">
       <div className="row d-flex justify-content-center text-center text-md-start">
         
-        {/* Branding Column */}
         <div className="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start">
           <div className="mb-2">
             <img 
@@ -18,7 +17,6 @@ function Footer() {
           </p>
         </div>
 
-        {/* Product Column */}
         <div className="col-6 col-md-2 mb-4">
           <h5 className="fw-bold" style={{ color: "#001d3d" }}>Product</h5>
           <ul className="list-unstyled d-flex flex-column gap-2" style={{ color: "#728496" }}>
@@ -29,7 +27,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Company Column */}
         <div className="col-6 col-md-2 mb-4">
           <h5 className="fw-bold" style={{ color: "#001d3d" }}>Company</h5>
           <ul className="list-unstyled d-flex flex-column gap-2" style={{ color: "#728496" }}>
@@ -40,7 +37,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Connect Column */}
         <div className="col-12 col-md-2 mb-4">
           <h5 className="fw-bold" style={{ color: "#001d3d" }}>Connect</h5>
           <div className="d-flex justify-content-center justify-content-md-start gap-3 fs-5" style={{ color: "#728496" }}>
